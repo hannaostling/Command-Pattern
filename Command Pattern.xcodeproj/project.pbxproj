@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		B576F1A121AB421700C8784A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B576F1A021AB421700C8784A /* AppDelegate.swift */; };
-		B576F1A321AB421700C8784A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B576F1A221AB421700C8784A /* ViewController.swift */; };
 		B576F1A621AB421700C8784A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B576F1A421AB421700C8784A /* Main.storyboard */; };
 		B576F1A821AB421A00C8784A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B576F1A721AB421A00C8784A /* Assets.xcassets */; };
 		B576F1AB21AB421A00C8784A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B576F1A921AB421A00C8784A /* LaunchScreen.storyboard */; };
 		B576F1B621AB421B00C8784A /* Command_PatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B576F1B521AB421B00C8784A /* Command_PatternTests.swift */; };
 		B576F1C121AB421B00C8784A /* Command_PatternUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B576F1C021AB421B00C8784A /* Command_PatternUITests.swift */; };
+		B576F1D021AB429D00C8784A /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = B576F1CF21AB429D00C8784A /* Command.swift */; };
+		B576F1D621AB42F200C8784A /* Receiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B576F1D521AB42F200C8784A /* Receiver.swift */; };
+		B576F1E221AB5D2300C8784A /* Invoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B576F1E121AB5D2300C8784A /* Invoker.swift */; };
+		B576F1E421AB5DFB00C8784A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B576F1E321AB5DFB00C8784A /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		B576F19D21AB421700C8784A /* Command Pattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Command Pattern.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B576F1A021AB421700C8784A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B576F1A221AB421700C8784A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B576F1A521AB421700C8784A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B576F1A721AB421A00C8784A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B576F1AA21AB421A00C8784A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		B576F1BC21AB421B00C8784A /* Command PatternUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Command PatternUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B576F1C021AB421B00C8784A /* Command_PatternUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command_PatternUITests.swift; sourceTree = "<group>"; };
 		B576F1C221AB421B00C8784A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B576F1CF21AB429D00C8784A /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		B576F1D521AB42F200C8784A /* Receiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receiver.swift; sourceTree = "<group>"; };
+		B576F1E121AB5D2300C8784A /* Invoker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invoker.swift; sourceTree = "<group>"; };
+		B576F1E321AB5DFB00C8784A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,15 @@
 		B576F19F21AB421700C8784A /* Command Pattern */ = {
 			isa = PBXGroup;
 			children = (
-				B576F1A021AB421700C8784A /* AppDelegate.swift */,
-				B576F1A221AB421700C8784A /* ViewController.swift */,
+				B576F1DE21AB5CC700C8784A /* Invoker */,
+				B576F1DF21AB5CCF00C8784A /* Receiver */,
+				B576F1E021AB5CD800C8784A /* Command */,
 				B576F1A421AB421700C8784A /* Main.storyboard */,
-				B576F1A721AB421A00C8784A /* Assets.xcassets */,
 				B576F1A921AB421A00C8784A /* LaunchScreen.storyboard */,
+				B576F1E321AB5DFB00C8784A /* ViewController.swift */,
+				B576F1A721AB421A00C8784A /* Assets.xcassets */,
 				B576F1AC21AB421A00C8784A /* Info.plist */,
+				B576F1A021AB421700C8784A /* AppDelegate.swift */,
 			);
 			path = "Command Pattern";
 			sourceTree = "<group>";
@@ -123,6 +132,30 @@
 				B576F1C221AB421B00C8784A /* Info.plist */,
 			);
 			path = "Command PatternUITests";
+			sourceTree = "<group>";
+		};
+		B576F1DE21AB5CC700C8784A /* Invoker */ = {
+			isa = PBXGroup;
+			children = (
+				B576F1E121AB5D2300C8784A /* Invoker.swift */,
+			);
+			path = Invoker;
+			sourceTree = "<group>";
+		};
+		B576F1DF21AB5CCF00C8784A /* Receiver */ = {
+			isa = PBXGroup;
+			children = (
+				B576F1D521AB42F200C8784A /* Receiver.swift */,
+			);
+			path = Receiver;
+			sourceTree = "<group>";
+		};
+		B576F1E021AB5CD800C8784A /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				B576F1CF21AB429D00C8784A /* Command.swift */,
+			);
+			path = Command;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B576F1A321AB421700C8784A /* ViewController.swift in Sources */,
+				B576F1E421AB5DFB00C8784A /* ViewController.swift in Sources */,
 				B576F1A121AB421700C8784A /* AppDelegate.swift in Sources */,
+				B576F1D621AB42F200C8784A /* Receiver.swift in Sources */,
+				B576F1D021AB429D00C8784A /* Command.swift in Sources */,
+				B576F1E221AB5D2300C8784A /* Invoker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
